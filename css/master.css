@@ -1,0 +1,54 @@
+
+html, body, div, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+header{
+  display: block; }
+
+body {
+  line-height: 1; }
+
+html, body, #map {
+  height: 89%;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: #f3f3f3; }
+
+h1 {
+  font-size: 25px;
+  text-transform: capitalize;
+  position: relative;
+  top: 25px; }
+
+#header {
+  width: 70%;
+  height: 100px;
+  margin: auto auto;
+}
+
+#header h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#map {
+  margin-top: 150px;
+  min-height: 505px; }
+
+
+#content {
+  width: 206px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 500; }
+
