@@ -6,12 +6,12 @@ var twitter = require('twitter'),
     io      = require('socket.io').listen(server);
 
 var twit = new twitter({
-  consumer_key: 'DeSYJOaeKNBn2BkUTIafmnPKK',
-  consumer_secret: 'EorWpVXokwe2eCm7xZxj2E6rVO8xHMwfF2DpyDZRVHPBvEbBor',
-  access_token_key: '346416876-RgJ1ymcIyHOS0CEYVX9hMa3GmcLxvVE1qqBByUD6',
-  access_token_secret: 'Vw2ZFUNkhtub5NG2SWnqUNUmsdmwPVYiMUQ0K4tS8HLlb',
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: '',
   request_options: {
-       proxy: 'http://genproxy.amdocs.com:8080'
+       proxy: ''
    } 
 }),
 
