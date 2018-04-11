@@ -35,11 +35,12 @@ io.sockets.on('connection', function (socket) {
           stream.on('data', function(data) {
               if (data.coordinates){
                 if (data.coordinates !== null){
-                  // if (data.place.country !== null) {
-                  //   country_list.push(data.place.country);
-                  //    countTweetsPerCountry();
-                  // }
-                  var coordinatesPoint = {"lat": data.coordinates.coordinates[0],"lng": data.coordinates.coordinates[1], "text" : data.text};
+              
+                  var coordinatesPoint = {
+                      "lat": data.coordinates.coordinates[0],
+                      "lng": data.coordinates.coordinates[1], 
+                      "text" : data.text
+                  };
 
                   socket.broadcast.emit("twitter-stream", coordinatesPoint);
                   socket.emit('twitter-stream', coordinatesPoint);
@@ -53,13 +54,6 @@ io.sockets.on('connection', function (socket) {
   socket.emit("connected");
 });
 
-// function countTweetsPerCountry() {
-//   var cnt = {};
-//   country_list.forEach(function(i) { cnt[i] = (cnt[i]||0) + 1;  });
-//   for (key in cnt) {
-//     console.log(key + " " + cnt);
-//   }
-// }
 
 
 
